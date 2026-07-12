@@ -9,7 +9,7 @@ MateriaSource::MateriaSource()
 MateriaSource::MateriaSource(const MateriaSource& other)
 {
     for (int i = 0; i < 4; i++)
-        learned[i] = other.learned[i] ? other.learned[i]->clone() : NULL;
+        learned[i] = other.learned[i] ? other.learned[i]->clone() : NULL;// !!
 }
 
 MateriaSource& MateriaSource::operator=(const MateriaSource& other)
