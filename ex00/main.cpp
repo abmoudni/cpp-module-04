@@ -29,8 +29,11 @@ int main()
     std::cout << "\n======== Wrong Animal ========\n";
 
     const WrongCat* wrong = new WrongCat();
-
+            WrongAnimal* wrongAnimal = new WrongAnimal();
+    std::cout << wrongAnimal  std::endl;
     std::cout << wrong->getType() << std::endl;
+
+wrong->makeSound();
 
     wrong->makeSound();
 
