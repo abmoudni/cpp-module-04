@@ -13,6 +13,10 @@ int main()
     AAnimal* dog = new Dog();
     AAnimal* cat = new Cat();
 
+   // AAnimal animal;   // Error
+  // كيف نجعل الكلاس Abstract؟
+//بإضافة Pure Virtual Function.
+    
     dog->makeSound();
     cat->makeSound();
 

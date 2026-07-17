@@ -14,13 +14,13 @@ Cat::Cat(const Cat& other) : Animal(other)
 
 }
 
-Cat& Cat::operator=(const Cat& other)
+Cat& Cat::operator=(const Cat& other) //Deep Copy ?//
 {
     std::cout << "Cat copy assignment operator called" << std::endl;
 
     if (this != &other)
     {
-        Animal::operator=(other);
+        Animal::operator=(other);//Upcasting
 
         delete brain;                
         brain = new Brain(*other.brain);
